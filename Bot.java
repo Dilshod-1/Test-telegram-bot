@@ -25,7 +25,6 @@ public class Bot extends TelegramLongPollingBot {
 
             try {
                 execute(new SendMessage(chat_id, "Здравствуйте Дилшод"+ update.getMessage().getText()));
-                execute(new SendMessage(chat_id, "как твои дела?"+ update.getMessage().getText()));
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
